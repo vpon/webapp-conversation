@@ -1,4 +1,5 @@
 import type { FC } from 'react'
+import Image from 'next/image'
 import classNames from 'classnames'
 import style from './style.module.css'
 
@@ -28,7 +29,7 @@ const AppIcon: FC<AppIconProps> = ({
         background,
       }}
     >
-      🤖
+      <Image alt="icon" height={16} width={16} src="https://storage.googleapis.com/aar3/icon/icon.png" />
     </span>
   )
 }
