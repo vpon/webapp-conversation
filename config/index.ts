@@ -1,9 +1,9 @@
 import type { AppInfo } from '@/types/app'
-export const APP_ID = ''
-export const API_KEY = ''
+export const APP_ID = 'ef00a9ca-ca7d-49d7-8b70-17b9e0cfed50'
+export const API_KEY = 'app-KKZ4KvU5f2Zf8F5GmNhCCl1M'
 export const API_URL = ''
 export const APP_INFO: AppInfo = {
-  title: 'Chat APP',
+  title: 'Vpon Analytics Copilot',
   description: '',
   copyright: '',
   privacy_policy: '',
