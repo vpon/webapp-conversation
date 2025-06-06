@@ -131,6 +131,7 @@ const Main: FC = () => {
   useEffect(handleConversationSwitch, [currConversationId, inited])
 
   const handleConversationIdChange = (id: string) => {
+    console.log('handleConversationIdChange', id)
     if (id === '-1') {
       createNewChat()
       setConversationIdChangeBecauseOfNew(true)

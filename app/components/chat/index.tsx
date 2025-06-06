@@ -122,7 +122,7 @@ const Answer: FC<IAnswerProps> = ({ item, feedbackDisabled = false, onFeedback, 
     return (
       <Tooltip
         selector={`user-feedback-${randomString(16)}`}
-        content={isLike ? '取消赞同' : '取消反对'}
+        content={`${t('common.operation.cancel')}${isLike ? t('common.operation.like') : t('common.operation.dislike')}`}
       >
         <div
           className={'relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white cursor-pointer text-gray-500 hover:text-gray-800'}

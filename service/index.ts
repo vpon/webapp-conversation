@@ -7,6 +7,12 @@ export const sendChatMessage = async (body: Record<string, any>, { onData, onCom
   onCompleted: IOnCompleted
   onError: IOnError
 }) => {
+  const dataLayer = window.dataLayer ?? []
+
+  dataLayer.push({
+    event: 'sendChatMessage',
+    message: body.query,
+  })
   return ssePost('chat-messages', {
     body: {
       ...body,
